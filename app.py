@@ -85,5 +85,9 @@ def update_dashboard(selected_category):
     return fig_qty, fig_amt, table_data
 
 # run server
+import os
+
 if __name__ == '__main__':
-    app.run(debug = True)
+    port = int(os.environ.get('PORT', 8050))  # Render sets PORT automatically
+    app.run(host='0.0.0.0', port=port, debug=True)
+
