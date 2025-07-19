@@ -5,7 +5,7 @@ from dash.dependencies import Input, Output
 import plotly.express as px
 import dash_bootstrap_components as dbc
 
-forecast_df = pd.read_csv('data\Product_12_week_forecast.csv')
+forecast_df = pd.read_csv('data/Product_12_week_forecast.csv')
 
 app = dash.Dash(__name__, external_stylesheets = [dbc.themes.BOOTSTRAP])
 
