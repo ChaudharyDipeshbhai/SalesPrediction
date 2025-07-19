@@ -2,5 +2,4 @@ dash
 dash-bootstrap-components
 pandas
 plotly
-os
 gunicorn
